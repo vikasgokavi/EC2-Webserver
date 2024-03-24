@@ -33,13 +33,13 @@ In this task, you will launch an Amazon EC2 instance with termination protection
 <img width="960" alt="Screenshot 2024-03-21 150402" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/720c6175-ef43-4c4f-bcee-778c0acf814c">
 
 5. For Amazon Machine Image (AMI), select Amazon Linux 2 AMI.​
-   An Amazon Machine Image (AMI) provides the information required to launch an instance, which is a virtual server in the cloud. An AMI includes:​
+An Amazon Machine Image (AMI) provides the information required to launch an instance, which is a virtual server in the cloud. An AMI includes:​
 
-A template for the root volume for the instance (for example, an operating system or an application server with applications)​
+a. A template for the root volume for the instance (for example, an operating system or an application server with applications)​.
 
-Launch permissions that control which AWS accounts can use the AMI to launch instances​
+b. Launch permissions that control which AWS accounts can use the AMI to launch instances​.
 
-A block device mapping that specifies the volumes to attach to the instance when it is launched​
+c. A block device mapping that specifies the volumes to attach to the instance when it is launched​.
 
 ​
 The Quick Start list contains the most commonly-used AMIs. You can also create your own AMI or select an AMI from the AWS Marketplace, an online store where you can sell or buy software that runs on AWS.​
@@ -47,6 +47,11 @@ The Quick Start list contains the most commonly-used AMIs. You can also create y
 ​
 
 <img width="960" alt="Screenshot 2024-03-21 151031" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/c92fdc2d-e2a0-4e0f-bada-d268bd2ab09a">
+
+
+<img width="960" alt="Screenshot 2024-03-21 151031" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/e14aa374-32dc-46ac-91d4-12e98a59b069">
+
+
 
 
 
