@@ -51,6 +51,12 @@ The Quick Start list contains the most commonly-used AMIs. You can also create y
 
 <img width="960" alt="Screenshot 2024-03-21 151031" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/e14aa374-32dc-46ac-91d4-12e98a59b069">
 
+6. In the Instance Type section, choose the Instance type drop down menu and choose  t3.micro​
+
+Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instance types comprise varying combinations of CPU, memory, storage, and networking capacity and give you the flexibility to choose the appropriate mix of resources for your applications. Each instance type includes one or more instance sizes, allowing you to scale your resources to the requirements of your target workload.​
+
+- A t3.micro instance type has 2 virtual CPUs and 1 GiB of memory.​
+
 
 
 
