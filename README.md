@@ -20,6 +20,7 @@ In this task, you will launch an Amazon EC2 instance with termination protection
 1. From the AWS Management Console, use the AWS search bar to search for EC2  and then choose the service from the list of results.​
 
  <img width="948" alt="Screenshot 2024-03-21 145551" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/17434179-f964-449b-a77f-9e2c691ffd8e">
+ 
 
  2. Choose the Launch instance  drop down menu and choose Launch instance.​
 
