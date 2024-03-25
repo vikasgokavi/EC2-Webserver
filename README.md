@@ -203,7 +203,7 @@ Scroll down to the bottom of the browser window and select Cancel.​
 
 Now we have explored several ways to monitor your instance.​
 
-# Task 3: Modify the security group that our web server is using to allow HTTP access.​
+## Task 3: Modify the security group that our web server is using to allow HTTP access.​
 
 When we launched the EC2 instance, we provided a script that installed a web server and created a simple web page. In this task, we will access content from the web server.​
 Select the  for Web Server, then choose the Details tab.​
@@ -348,7 +348,7 @@ Note: An EBS volume being modified goes through a sequence of states: Modifying,
 
  <img width="741" alt="Screenshot 2024-03-22 130229" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/a4a6d333-42b0-4390-8278-ccf4fd9ad8eb">
 
-# Task 5: Test Termination Protection​
+## Task 5: Test Termination Protection​
 
 You can delete your instance when you no longer need it. This is referred to as terminating your instance. You cannot connect to or restart an instance after it has been terminated.​
 
@@ -382,7 +382,7 @@ You can now terminate the instance.​
 
 <img width="960" alt="Screenshot 2024-03-22 131227" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/a3ca2da2-69d8-4919-b146-a532a99fa6dd">
 
-# Task 6: We can now terminate the instance.​
+## Task 6: We can now terminate the instance.​
 
 Refresh  the instance console screen.​
 
@@ -404,7 +404,7 @@ The Instance state of the Web Server instance should change to Terminated after 
     <img width="736" alt="Screenshot 2024-03-22 131725" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/77b8d193-42d9-4638-9468-47fcb9a41b9d">
 
 
-## **Conclusion​**
+# **Conclusion​**
 
 We have successfully done the following:​
 
