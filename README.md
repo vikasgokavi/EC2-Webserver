@@ -333,7 +333,115 @@ Choose Modify to confirm and increase the size of the volume.​
 
 ​<img width="960" alt="Screenshot 2024-03-22 124913" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/1fb92a9e-d330-4a5f-a307-393fd05331dd">
 
-8. 
+ <img width="739" alt="Screenshot 2024-03-22 125029" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/11975324-74fe-4594-b792-c7b4ee18847e">
+
+8. START THE RESIZED INSTANCE​
+
+You will now start the instance again, which will now have more memory and more disk space.​
+
+In left navigation pane, select Instances.​
+
+Select  the Web Server.​
+
+Select Instance state  and then Start instance.​
+
+Note: An EBS volume being modified goes through a sequence of states: Modifying, Optimizing, and finally Complete.​
+
+ Now we have successfully resized your Amazon EC2 Instance. In this task you changed your instance type from t3.micro to a t3.small. You also modified your root disk volume from 8 GiB to 10 GiB.​
+
+ <img width="960" alt="Screenshot 2024-03-22 125900" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/8089efea-293e-42d8-920b-d211ed730443">
+
+ <img width="741" alt="Screenshot 2024-03-22 130229" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/a4a6d333-42b0-4390-8278-ccf4fd9ad8eb">
+
+9. Test Termination Protection​
+
+You can delete your instance when you no longer need it. This is referred to as terminating your instance. You cannot connect to or restart an instance after it has been terminated.​
+
+In this task, you will learn how to use termination protection.​
+
+In left navigation pane, select Instances.​
+
+Select  the Web Server.​
+
+Select Instance state  and then Terminate instance.​
+
+Choose Terminate .​
+
+​<img width="960" alt="Screenshot 2024-03-22 130824" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/6e95ada9-42e5-44a8-820b-5fef3dd077f2">
+
+At this point you see the following error message on top of the page:​
+
+Failed to terminate an instance: The instance ‘i-xxxxxxxx’ may not be terminated. Modify its ‘disableApiTermination’ instance attribute and try again.​
+
+The above error is expected, and this is a safeguard to prevent the accidental termination of an instance. If you really want to terminate the instance, you will need to disable the termination protection.​
+
+​<img width="740" alt="Screenshot 2024-03-22 130932" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/4e03a279-0077-4eb1-bdae-025bde460d49">
+
+10. Select Actions , choose Instance settings , and Change termination protection.​
+
+Unselect  Enable.​
+
+Choose Save .​
+
+You can now terminate the instance.​
+
+<img width="960" alt="Screenshot 2024-03-22 131227" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/a3ca2da2-69d8-4919-b146-a532a99fa6dd">
+
+11. We can now terminate the instance.​
+
+Refresh  the instance console screen.​
+
+Select  the Web Server​
+
+Choose Instance state  , and Terminate instance .​
+
+Choose Terminate .​
+
+ Expected output:​
+
+The Instance state of the Web Server instance should change to Terminated after about 30 seconds. You may have to refresh the page a few times​
+
+<img width="960" alt="Screenshot 2024-03-22 131433" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/43e05407-f742-422a-bc36-e6eaba675cb3">
+
+
+12. The Instance state of the Web Server instance should change to Terminated after about 30 seconds. You may have to refresh the page a few times​.
+
+    <img width="736" alt="Screenshot 2024-03-22 131725" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/77b8d193-42d9-4638-9468-47fcb9a41b9d">
+
+
+# **Conclusion​**
+
+We have successfully done the following:​
+
+Launched a web server with termination protection enabled.​
+
+Monitored Your EC2 instance.​
+
+Modified the security group that our web server is using to allow HTTP access.​
+
+Resized your Amazon EC2 instance to scale.​
+
+Tested termination protection.​
+
+Terminated our EC2 instance.​
+
+
+
+​
+
+
+​
+
+ 
+
+
+
+​
+​
+​
+
+​
+ 
 
 
 
