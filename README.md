@@ -23,16 +23,16 @@ In this task, you will launch an Amazon EC2 instance with termination protection
 <img width="948" alt="Screenshot 2024-03-21 145551" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/17434179-f964-449b-a77f-9e2c691ffd8e">
  
 
- 2. Choose the Launch instance  drop down menu and choose Launch instance.​
+2. Choose the Launch instance  drop down menu and choose Launch instance.​
     
 
 <img width="960" alt="Screenshot 2024-03-21 145910" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/c36981cd-62c5-485a-9161-86a54877f3fa">
 
- 3. In the Name and tags section, enter  Web Server  in the Name box.​
+3. In the Name and tags section, enter  Web Server  in the Name box.​
     
 <img width="960" alt="Screenshot 2024-03-21 150402" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/720c6175-ef43-4c4f-bcee-778c0acf814c">
 
-5. For Amazon Machine Image (AMI), select Amazon Linux 2 AMI.​
+4. For Amazon Machine Image (AMI), select Amazon Linux 2 AMI.​
 An Amazon Machine Image (AMI) provides the information required to launch an instance, which is a virtual server in the cloud. An AMI includes:​
 
 a. A template for the root volume for the instance (for example, an operating system or an application server with applications)​.
@@ -51,15 +51,15 @@ The Quick Start list contains the most commonly-used AMIs. You can also create y
 
 <img width="960" alt="Screenshot 2024-03-21 151031" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/e14aa374-32dc-46ac-91d4-12e98a59b069">
 
-6. In the Instance Type section, choose the Instance type drop down menu and choose  t3.micro​
+5. In the Instance Type section, choose the Instance type drop down menu and choose  t3.micro​
 
-Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instance types comprise varying combinations of CPU, memory, storage, and networking capacity and give you the flexibility to choose the appropriate mix of resources for your applications. Each instance type includes one or more instance sizes, allowing you to scale your resources to the requirements of your target workload.​
+     Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instance types comprise varying combinations of CPU, memory, storage, and networking capacity and give you the flexibility to choose the appropriate mix of resources for your applications. Each instance type includes one or more instance sizes, allowing you to scale your resources to the requirements of your target workload.​
 
 A t3.micro instance type has 2 virtual CPUs and 1 GiB of memory.​
 
 <img width="960" alt="Screenshot 2024-03-21 153948" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/fae42aa9-c1ae-49a2-8894-345b7fa55f86">
 
-7. In the Key pair (login) section, locate the Key pair name drop down menu and choose Proceed without a key pair (Not recommended).​
+6. In the Key pair (login) section, locate the Key pair name drop down menu and choose Proceed without a key pair (Not recommended).​
 
 Amazon EC2 uses public–key cryptography to encrypt and decrypt login information. To log in to your instance, you must create a key pair, specify the name of the key pair when you launch the instance, and provide the private key when you connect to the instance.​
 
@@ -67,33 +67,36 @@ In this lab you will not log into your instance, so you do not require a key pai
 
 ​<img width="545" alt="Screenshot 2024-03-21 154641" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/839acb81-01e1-4117-b0b4-f69f11299982">
 
-8. In the Network settings section, choose the Edit button. Make the following selections:​
+7. In the Network settings section, choose the Edit button. Make the following selections:​
 VPC: Choose the VPC with the name that contains Lab VPC​.
 
 
 <img width="546" alt="Screenshot 2024-03-21 155210" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/df157f2b-49e5-42f7-aaee-a7e963538eb4">
 
-9. Subnet: Choose the Subnet with the name that contains  Public Subnet 1​
+8. Subnet: Choose the Subnet with the name that contains  Public Subnet 1​
 The Network indicates which Virtual Private Cloud (VPC) you wish to launch the instance into. You can have multiple networks, such as different ones for development, testing and production.​
 
 The Lab VPC was created using a CloudFormation template during the setup process of your lab. This VPC includes two public subnets in two different Availability Zones.​
 
 <img width="960" alt="Screenshot 2024-03-21 155501" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/b73d23d9-cca0-4024-8b7e-92e6af6b3bc4">
 
-10. In the Firewall (security groups) section, choose  Create security group ​
+9. In the Firewall (security groups) section, choose  Create security group
+     ​
 Security group name =  **Web Server security group​**
+
 Description =  **Security group for my web server​**
+
 A security group acts as a virtual firewall that controls the traffic for one or more instances. When you launch an instance, you associate one or more security groups with the instance. You add rules to each security group that allow traffic to or from its associated instances. You can modify the rules for a security group at any time; the new rules are automatically applied to all instances that are associated with the security group.​
 
 In this lab, you will not log into your instance using SSH. Removing SSH access will improve the security of the instance.​
 
 <img width="960" alt="Screenshot 2024-03-22 094042" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/dfbac318-0471-4964-bd58-048844b453d1">
 
-11. Choose the Remove button to remove the existing SSH rule. We should have no security group rules.​
+10. Choose the Remove button to remove the existing SSH rule. We should have no security group rules.​
 
 <img width="960" alt="Screenshot 2024-03-22 094312" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/8d324d5d-a1fe-4775-9751-c0a85206351c">
 
-12. The Configure storage section default choices can be left alone.​
+11. The Configure storage section default choices can be left alone.​
 
  Amazon EC2 stores data on a network-attached virtual disk called Elastic Block Store.​
 
@@ -102,19 +105,19 @@ We will launch the Amazon EC2 instance using a default 8 GiB disk volume. This w
 <img width="960" alt="Screenshot 2024-03-22 094812" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/ee63f9af-9fa9-4ad3-9239-6a7b3b04ee8f">
 
 
-13. Expand the Advanced details section. Scroll down to the Termination protection drop down menu and set to Enable.​
+12. Expand the Advanced details section. Scroll down to the Termination protection drop down menu and set to Enable.​
 
  When an Amazon EC2 instance is no longer required, it can be terminated, which means that the instance is stopped and its resources are released. A terminated instance cannot be started again. If we want to prevent the instance from being accidentally terminated, we can enable termination protection for the instance, which prevents it from being terminated.​
 
 <img width="960" alt="Screenshot 2024-03-22 100029" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/ea6e845b-f66d-46b9-9304-6b508967ae0b">
 
-14. Scroll all the way to the bottom until you see a field for User data.​
+13. Scroll all the way to the bottom until you see a field for User data.​
 
  When you launch an instance, you can pass user data to the instance that can be used to perform common automated configuration tasks and even run scripts after the instance starts.​
 
 Your instance is running Amazon Linux, so you will provide a shell script that will run when the instance starts.​
 Copy the following text and paste it into the User data field:​
-#!/bin/bash​
+**#!/bin/bash​**
 
 **yum -y install httpd**​
 
@@ -122,7 +125,7 @@ Copy the following text and paste it into the User data field:​
 
 **systemctl start httpd​**
 
-**echo <html><h1>Hello Vishwanath ! From Your Web Server!</h1></html> > /var/www/html/index.html**​
+"**echo <html><h1>Hello Vishwanath ! From Your Web Server!</h1></html> > /var/www/html/index.html**"​
 
 <img width="960" alt="Screenshot 2024-03-22 100514" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/9e3a6bda-aaef-4eca-baf1-4f4d48c03fa3">
 
