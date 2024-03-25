@@ -382,7 +382,7 @@ We can now terminate the instance.​
 
 <img width="960" alt="Screenshot 2024-03-22 131227" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/a3ca2da2-69d8-4919-b146-a532a99fa6dd">
 
-## Task 6: We can now terminate the instance.​
+## Task 6: Terminate your EC2 instance.
 
 Refresh  the instance console screen.​
 
