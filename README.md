@@ -4,15 +4,15 @@ EC2 Web Server Management and Scaling Project
 ## **OBJECTIVES**
  1. Launch a web server with termination protection enabled
  ​
- 2. Monitor Your EC2 instance
+ 2. Monitor our EC2 instance
  
- 3. Modify the security group that your web server is using to allow HTTP access​
+ 3. Modify the security group that our web server is using to allow HTTP access​
  
- 4. Resize your Amazon EC2 instance to scale​
+ 4. Resize our Amazon EC2 instance to scale​
  
  5. Test termination protection
  ​
- 6. Terminate your EC2 instance​
+ 6. Terminate our EC2 instance​
 
 ## Task 1: Launch Your Amazon EC2 Instance​
 
@@ -159,7 +159,7 @@ Now we have successfully launched your first Amazon EC2 instance.​
 <img width="960" alt="Screenshot 2024-03-22 102333" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/12718b32-e932-47a8-bc9c-5a3b6a8a152a">
 
 
-16. Monitor the Instance​
+## Task 2: Monitor the Instance​
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of our Amazon Elastic Compute Cloud (Amazon EC2) instances and your AWS solutions.​
 
@@ -171,7 +171,7 @@ Notice that both the System reachability and Instance reachability checks have p
 
 <img width="960" alt="Screenshot 2024-03-22 103147" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/a4a817c4-396a-4c93-8db1-6f1c44fe82f0">
 
-17. Select the Monitoring tab.​
+1. Select the Monitoring tab.​
 
 This tab displays CloudWatch metrics for your instance. Currently, there are not many metrics to display because the instance was recently launched.​
 
@@ -189,7 +189,7 @@ The System Log displays the console output of the instance, which is a valuable 
 ​
 <img width="960" alt="Screenshot 2024-03-22 103543" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/fa5508ed-2085-46e1-ab34-3818c1455775">
 
-18. Select the  for Web Server, then select the Actions  menu, choose Monitor and troubleshoot  and select Get instance screenshot.​
+2. Select the  for Web Server, then select the Actions  menu, choose Monitor and troubleshoot  and select Get instance screenshot.​
 
  Expected output:​
 
@@ -203,7 +203,7 @@ Scroll down to the bottom of the browser window and select Cancel.​
 
 Now we have explored several ways to monitor your instance.​
 
-19. Update Your Security Group and Access the Web Server​
+# Task 3: Modify the security group that our web server is using to allow HTTP access.​
 
 When we launched the EC2 instance, we provided a script that installed a web server and created a simple web page. In this task, we will access content from the web server.​
 Select the  for Web Server, then choose the Details tab.​
@@ -260,7 +260,7 @@ The new Inbound HTTP rule will create an entry for both IPV4 IP address (0.0.0.0
 <img width="960" alt="Screenshot 2024-03-22 115840" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/45fd2d39-0f7d-45c6-88ca-1dd5791340d2">
 
 
-## Task2:Resize Your Instance: Instance Type and EBS Volume​
+## Task 4:Resize Your Instance: Instance Type and EBS Volume​
 
 1. As your needs change, you might find that your instance is over-utilized (too small) or under-utilized (too large). If so, you can change the instance type. For example, if a t3.micro instance is too small for its workload, you can change it to an t3.small instance. Similarly, you can change the size of a disk.​
 STOP YOUR INSTANCE​
@@ -348,7 +348,7 @@ Note: An EBS volume being modified goes through a sequence of states: Modifying,
 
  <img width="741" alt="Screenshot 2024-03-22 130229" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/a4a6d333-42b0-4390-8278-ccf4fd9ad8eb">
 
-9. Test Termination Protection​
+# Task 5: Test Termination Protection​
 
 You can delete your instance when you no longer need it. This is referred to as terminating your instance. You cannot connect to or restart an instance after it has been terminated.​
 
@@ -382,7 +382,7 @@ You can now terminate the instance.​
 
 <img width="960" alt="Screenshot 2024-03-22 131227" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/a3ca2da2-69d8-4919-b146-a532a99fa6dd">
 
-11. We can now terminate the instance.​
+# Task 6: We can now terminate the instance.​
 
 Refresh  the instance console screen.​
 
@@ -404,7 +404,7 @@ The Instance state of the Web Server instance should change to Terminated after 
     <img width="736" alt="Screenshot 2024-03-22 131725" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/77b8d193-42d9-4638-9468-47fcb9a41b9d">
 
 
-# **Conclusion​**
+## **Conclusion​**
 
 We have successfully done the following:​
 
