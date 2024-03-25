@@ -125,7 +125,7 @@ Copy the following text and paste it into the User data field:​
 
 **systemctl start httpd​**
 
-"**echo <html><h1>Hello Vishwanath ! From Your Web Server!</h1></html> > /var/www/html/index.html**"​
+**echo <html><h1>Hello Vishwanath ! From Your Web Server!</h1></html> > /var/www/html/index.html**.​
 
 <img width="960" alt="Screenshot 2024-03-22 100514" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/9e3a6bda-aaef-4eca-baf1-4f4d48c03fa3">
 
