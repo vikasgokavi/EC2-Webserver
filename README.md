@@ -117,19 +117,12 @@ We will launch the Amazon EC2 instance using a default 8 GiB disk volume. This w
 
 Your instance is running Amazon Linux, so you will provide a shell script that will run when the instance starts.​
 Copy the following text and paste it into the User data field:​
-**#!/bin/bash​**
+![image](https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/911f39ee-063f-4234-9e39-6e0dc762bdcc)
 
-**yum -y install httpd**​
-
-**systemctl enable httpd**​
-
-**systemctl start httpd​**
-
-**echo <html><h1>Hello Vishwanath ! From Your Web Server!</h1></html> > /var/www/html/index.html**.​
 
 <img width="960" alt="Screenshot 2024-03-22 100514" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/9e3a6bda-aaef-4eca-baf1-4f4d48c03fa3">
 
-15. The script will:​
+14. The script will:​
 
 Install an Apache web server (httpd)​
 
@@ -155,9 +148,9 @@ Wait for your instance to display the following:​
 
 Periodically refresh the page if you don’t see a change in the Instance state or Status check values.​
 
-16. Select the  for your newly-created Web Server and the Details tab displays detailed information about your instance.​
+15. Select the  for our newly-created Web Server and the Details tab displays detailed information about your instance.​
 
- To view more information in the Details tab, drag the window divider upwards.​
+To view more information in the Details tab, drag the window divider upwards.​
 
 Review the information displayed in the Details tab. It includes information about the instance type, security settings, network settings, and more. The instance receives a Public IPv4 DNS name that you can use to communicate with the instance from the Internet.​
 
@@ -166,37 +159,37 @@ Now we have successfully launched your first Amazon EC2 instance.​
 <img width="960" alt="Screenshot 2024-03-22 102333" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/12718b32-e932-47a8-bc9c-5a3b6a8a152a">
 
 
-18. Monitor the Instance​
+16. Monitor the Instance​
 
-Monitoring is an important part of maintaining the reliability, availability, and performance of your Amazon Elastic Compute Cloud (Amazon EC2) instances and your AWS solutions.​
+Monitoring is an important part of maintaining the reliability, availability, and performance of our Amazon Elastic Compute Cloud (Amazon EC2) instances and your AWS solutions.​
 
 Select the Status checks tab.​
 
-With instance status monitoring, you can quickly determine whether Amazon EC2 has detected any problems that might prevent your instances from running applications. Amazon EC2 performs automated checks on every running EC2 instance to identify hardware and software issues.​
+With instance status monitoring, we can quickly determine whether Amazon EC2 has detected any problems that might prevent our instances from running applications. Amazon EC2 performs automated checks on every running EC2 instance to identify hardware and software issues.​
 
 Notice that both the System reachability and Instance reachability checks have passed.​
 
 <img width="960" alt="Screenshot 2024-03-22 103147" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/a4a817c4-396a-4c93-8db1-6f1c44fe82f0">
 
-19. Select the Monitoring tab.​
+17. Select the Monitoring tab.​
 
 This tab displays CloudWatch metrics for your instance. Currently, there are not many metrics to display because the instance was recently launched.​
 
 You can choose a graph to see an expanded view.​
 
- Amazon EC2 sends metrics to Amazon CloudWatch for your EC2 instances. Basic (five-minute) monitoring is enabled by default. You can enable detailed (one-minute) monitoring.​
+Amazon EC2 sends metrics to Amazon CloudWatch for your EC2 instances. Basic (five-minute) monitoring is enabled by default. You can enable detailed (one-minute) monitoring.​
 
 Select the Actions  menu (in the upper right of the console), choose Monitor and troubleshoot  and select Get system log.​
 
- Expected output:​
- Note: If you do not see a system log, wait a couple of minutes and refresh the log screen until it appears.​
+Expected output:​
+Note: If you do not see a system log, wait a couple of minutes and refresh the log screen until it appears.​
 
 The System Log displays the console output of the instance, which is a valuable tool for problem diagnosis. It is especially useful for troubleshooting kernel problems and service configuration issues that could cause an instance to terminate or become unreachable before its SSH daemon can be started.​
 
 ​
 <img width="960" alt="Screenshot 2024-03-22 103543" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/fa5508ed-2085-46e1-ab34-3818c1455775">
 
-20. Select the  for Web Server, then select the Actions  menu, choose Monitor and troubleshoot  and select Get instance screenshot.​
+18. Select the  for Web Server, then select the Actions  menu, choose Monitor and troubleshoot  and select Get instance screenshot.​
 
  Expected output:​
 
@@ -210,7 +203,7 @@ Scroll down to the bottom of the browser window and select Cancel.​
 
 Now we have explored several ways to monitor your instance.​
 
-21. Update Your Security Group and Access the Web Server​
+19. Update Your Security Group and Access the Web Server​
 
 When we launched the EC2 instance, we provided a script that installed a web server and created a simple web page. In this task, we will access content from the web server.​
 Select the  for Web Server, then choose the Details tab.​
@@ -221,8 +214,7 @@ http://  in the browser and paste the IP address we just copied, then press Ente
 
 <img width="960" alt="Screenshot 2024-03-22 113908" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/14160ed7-3f7f-4324-b9de-068503fe16ae">
 
-22. Consider:​
-Are we able to access your web server? Why not?​
+20. Consider:​ Are we able to access our web server? Why not?​
 
 we are not currently able to access web server because the security group is not permitting inbound traffic on port 80, which is used for HTTP web requests. This is a demonstration of using a security group as a firewall to restrict the network traffic that is allowed in and out of an instance.​
 
@@ -232,7 +224,7 @@ Keep the browser tab open, but return to the EC2 Management Console tab.​
 
 <img width="960" alt="Screenshot 2024-03-22 114135" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/7d185cd3-2f7d-4ee8-995d-0b457f7631c7">
 
-23. In the left navigation pane, select Security Groups.​
+21. In the left navigation pane, select Security Groups.​
 
 Select the  for the Security group ID with the Security group name Web Server security group.​
 
@@ -240,7 +232,7 @@ The security group currently has no rules.​
 
 ​<img width="960" alt="Screenshot 2024-03-22 114617" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/02e46aae-019e-41ab-bf8e-8cc9316dd1e4">
 
-24. Choose the Inbound rules tab.​
+22. Choose the Inbound rules tab.​
 
 Choose Edit inbound rules.​
 
@@ -248,7 +240,7 @@ Choose Add rule then configure:​
 
 ​ <img width="960" alt="Screenshot 2024-03-22 115242" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/f632ef7c-8600-4f86-a6b8-52cf76f28891">
 
-25. Type: HTTP​
+23. Type: HTTP​
 
 Source: Anywhere-IPv4​
 
@@ -262,7 +254,7 @@ The new Inbound HTTP rule will create an entry for both IPV4 IP address (0.0.0.0
 
  <img width="960" alt="Screenshot 2024-03-22 115634" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/ccb76a11-ecf6-4fa1-9019-02ffdce837a2">
 
- 26. Return to the web server tab that we previously opened and refresh  the page.​
+24. Return to the web server tab that we previously opened and refresh  the page.​
      We should see the message Hello From Your Web Server!​
 
 <img width="960" alt="Screenshot 2024-03-22 115840" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/45fd2d39-0f7d-45c6-88ca-1dd5791340d2">
@@ -400,7 +392,7 @@ Choose Instance state  , and Terminate instance .​
 
 Choose Terminate .​
 
- Expected output:​
+Expected output:​
 
 The Instance state of the Web Server instance should change to Terminated after about 30 seconds. You may have to refresh the page a few times​
 
@@ -416,17 +408,17 @@ The Instance state of the Web Server instance should change to Terminated after 
 
 We have successfully done the following:​
 
-Launched a web server with termination protection enabled.​
+1. Launched a web server with termination protection enabled.​
 
-Monitored Your EC2 instance.​
+2. Monitored Your EC2 instance.​
 
-Modified the security group that our web server is using to allow HTTP access.​
+3. Modified the security group that our web server is using to allow HTTP access.​
 
-Resized your Amazon EC2 instance to scale.​
+4. Resized your Amazon EC2 instance to scale.​
 
-Tested termination protection.​
+5. Tested termination protection.​
 
-Terminated our EC2 instance.​
+6. Terminated our EC2 instance.​
 
 
 
