@@ -122,7 +122,7 @@ Copy the following text and paste it into the User data field:​
 
 **systemctl start httpd​**
 
-**echo '<html><h1>Hello Vishwanath ! From Your Web Server!</h1></html>' > /var/www/html/index.html**​
+**echo <html><h1>Hello Vishwanath ! From Your Web Server!</h1></html> > /var/www/html/index.html**​
 
 <img width="960" alt="Screenshot 2024-03-22 100514" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/9e3a6bda-aaef-4eca-baf1-4f4d48c03fa3">
 
@@ -294,6 +294,52 @@ Wait for the Instance State to display: Stopped .​
 If it is not already selected, select the  for Web Server .​
 
 Select the Actions  menu, select Instance settings  and Change instance type, then configure:​
+
+<img width="960" alt="Screenshot 2024-03-22 122627" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/c15bf5af-b6d3-46d4-9562-9d56c9abfb2c">
+
+4. Instance type: t3.small​
+
+Choose Apply .​
+
+When the instance is started again it will be a t3.small, which has twice as much memory as a t3.micro instance.​
+
+​<img width="346" alt="Screenshot 2024-03-22 123205" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/40f23ab9-5601-47b4-a538-fbab08274bd9">
+
+5. Instance type: t3.small​
+
+Choose Apply .​
+
+When the instance is started again it will be a t3.small, which has twice as much memory as a t3.micro instance.​
+
+​<img width="960" alt="Screenshot 2024-03-22 123736" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/351c7491-cbb3-4a33-b238-f021eb969532">
+
+6. RESIZE THE EBS VOLUME​
+
+In the left navigation pane, select Volumes from the  Elastic Block Store section.​
+
+Select  the volume there.​
+
+In the Actions  menu, select Modify volume.​
+
+​<img width="960" alt="Screenshot 2024-03-22 124717" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/304c6aa4-db4b-4d02-9a3d-68a213caeb29">
+
+7. The disk volume currently has a size of 8 GiB. You will now increase the size of this disk.​
+
+Change the size (GiB) to: 10​
+
+Choose Modify .​
+
+Choose Modify to confirm and increase the size of the volume.​
+
+​<img width="960" alt="Screenshot 2024-03-22 124913" src="https://github.com/vikasgokavi/EC2-Webserver/assets/105034318/1fb92a9e-d330-4a5f-a307-393fd05331dd">
+
+8. 
+
+
+
+
+
+
 
 ​
 
